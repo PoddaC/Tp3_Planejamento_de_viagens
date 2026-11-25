@@ -1,0 +1,335 @@
+{
+  "_sobre": "Base de destinos usada pelos formulários (País -> Estado -> Cidade). 'codigo' = país ISO-3166 (filtra a busca de cidades no clima); 'moeda' = moeda local (aba Câmbio); cidades podem ter 'busca' quando o nome usado na API é diferente do exibido. Custos e passagens NÃO ficam aqui: são estimados pelo modelo de linguagem.",
+  "paises": {
+    "Brasil": {
+      "codigo": "BR",
+      "moeda": "BRL",
+      "estados": {
+        "Amazonas": [
+          "Manaus"
+        ],
+        "Bahia": [
+          "Salvador",
+          "Porto Seguro",
+          "Itacaré"
+        ],
+        "Ceará": [
+          "Fortaleza",
+          {
+            "nome": "Jericoacoara",
+            "busca": "Jijoca de Jericoacoara"
+          }
+        ],
+        "Minas Gerais": [
+          "Belo Horizonte",
+          "Ouro Preto",
+          "Tiradentes"
+        ],
+        "Paraná": [
+          "Curitiba",
+          "Foz do Iguaçu"
+        ],
+        "Pernambuco": [
+          "Recife",
+          "Fernando de Noronha",
+          {
+            "nome": "Porto de Galinhas",
+            "busca": "Ipojuca"
+          }
+        ],
+        "Rio de Janeiro": [
+          "Rio de Janeiro",
+          "Armação dos Búzios",
+          "Paraty",
+          "Angra dos Reis"
+        ],
+        "Rio Grande do Sul": [
+          "Gramado",
+          "Canela",
+          "Porto Alegre"
+        ],
+        "Santa Catarina": [
+          "Florianópolis",
+          "Balneário Camboriú",
+          "Bombinhas"
+        ],
+        "São Paulo": [
+          "São Paulo",
+          "Campos do Jordão",
+          "Ubatuba"
+        ]
+      }
+    },
+    "Argentina": {
+      "codigo": "AR",
+      "moeda": "ARS",
+      "estados": {
+        "Buenos Aires (capital)": [
+          "Buenos Aires"
+        ],
+        "Mendoza": [
+          "Mendoza"
+        ],
+        "Río Negro": [
+          {
+            "nome": "Bariloche",
+            "busca": "San Carlos de Bariloche"
+          }
+        ],
+        "Salta": [
+          "Salta"
+        ],
+        "Santa Cruz": [
+          "El Calafate"
+        ],
+        "Terra do Fogo": [
+          "Ushuaia"
+        ]
+      }
+    },
+    "Chile": {
+      "codigo": "CL",
+      "moeda": "CLP",
+      "estados": {
+        "Região Metropolitana": [
+          "Santiago"
+        ],
+        "Valparaíso": [
+          "Valparaíso",
+          "Viña del Mar"
+        ],
+        "Antofagasta": [
+          "San Pedro de Atacama"
+        ],
+        "Los Lagos": [
+          "Puerto Varas"
+        ],
+        "Magalhães": [
+          "Puerto Natales",
+          "Punta Arenas"
+        ]
+      }
+    },
+    "Uruguai": {
+      "codigo": "UY",
+      "moeda": "UYU",
+      "estados": {
+        "Montevidéu": [
+          {
+            "nome": "Montevidéu",
+            "busca": "Montevideo"
+          }
+        ],
+        "Maldonado": [
+          "Punta del Este"
+        ],
+        "Colonia": [
+          "Colonia del Sacramento"
+        ]
+      }
+    },
+    "Portugal": {
+      "codigo": "PT",
+      "moeda": "EUR",
+      "estados": {
+        "Lisboa": [
+          "Lisboa",
+          "Sintra",
+          "Cascais"
+        ],
+        "Porto": [
+          "Porto"
+        ],
+        "Algarve": [
+          "Lagos",
+          "Albufeira",
+          "Faro"
+        ],
+        "Madeira": [
+          "Funchal"
+        ]
+      }
+    },
+    "Espanha": {
+      "codigo": "ES",
+      "moeda": "EUR",
+      "estados": {
+        "Madri": [
+          {
+            "nome": "Madri",
+            "busca": "Madrid"
+          }
+        ],
+        "Catalunha": [
+          "Barcelona"
+        ],
+        "Andaluzia": [
+          {
+            "nome": "Sevilha",
+            "busca": "Sevilla"
+          },
+          "Granada",
+          "Málaga"
+        ],
+        "Ilhas Baleares": [
+          {
+            "nome": "Palma de Maiorca",
+            "busca": "Palma"
+          },
+          "Ibiza"
+        ]
+      }
+    },
+    "França": {
+      "codigo": "FR",
+      "moeda": "EUR",
+      "estados": {
+        "Île-de-France": [
+          "Paris",
+          "Versailles"
+        ],
+        "Provence-Alpes-Côte d'Azur": [
+          "Nice",
+          {
+            "nome": "Marselha",
+            "busca": "Marseille"
+          },
+          "Cannes"
+        ],
+        "Auvergne-Rhône-Alpes": [
+          "Lyon",
+          "Chamonix"
+        ]
+      }
+    },
+    "Itália": {
+      "codigo": "IT",
+      "moeda": "EUR",
+      "estados": {
+        "Lácio": [
+          "Roma"
+        ],
+        "Toscana": [
+          {
+            "nome": "Florença",
+            "busca": "Firenze"
+          },
+          {
+            "nome": "Pisa",
+            "busca": "Pisa"
+          }
+        ],
+        "Vêneto": [
+          {
+            "nome": "Veneza",
+            "busca": "Venezia"
+          }
+        ],
+        "Lombardia": [
+          {
+            "nome": "Milão",
+            "busca": "Milano"
+          }
+        ],
+        "Campânia": [
+          {
+            "nome": "Nápoles",
+            "busca": "Napoli"
+          },
+          "Positano"
+        ]
+      }
+    },
+    "Estados Unidos": {
+      "codigo": "US",
+      "moeda": "USD",
+      "estados": {
+        "Califórnia": [
+          "Los Angeles",
+          "San Francisco",
+          "San Diego"
+        ],
+        "Flórida": [
+          "Miami",
+          "Orlando"
+        ],
+        "Nevada": [
+          "Las Vegas"
+        ],
+        "Nova York": [
+          {
+            "nome": "Nova York",
+            "busca": "New York"
+          }
+        ]
+      }
+    },
+    "México": {
+      "codigo": "MX",
+      "moeda": "MXN",
+      "estados": {
+        "Cidade do México": [
+          {
+            "nome": "Cidade do México",
+            "busca": "Mexico City"
+          }
+        ],
+        "Quintana Roo": [
+          "Cancún",
+          "Playa del Carmen",
+          "Tulum"
+        ],
+        "Oaxaca": [
+          {
+            "nome": "Oaxaca",
+            "busca": "Oaxaca de Juárez"
+          }
+        ]
+      }
+    },
+    "Japão": {
+      "codigo": "JP",
+      "moeda": "JPY",
+      "estados": {
+        "Tóquio": [
+          {
+            "nome": "Tóquio",
+            "busca": "Tokyo"
+          }
+        ],
+        "Quioto": [
+          {
+            "nome": "Quioto",
+            "busca": "Kyoto"
+          }
+        ],
+        "Osaka": [
+          "Osaka"
+        ],
+        "Hokkaido": [
+          "Sapporo"
+        ]
+      }
+    },
+    "Reino Unido": {
+      "codigo": "GB",
+      "moeda": "GBP",
+      "estados": {
+        "Inglaterra": [
+          {
+            "nome": "Londres",
+            "busca": "London"
+          },
+          "Liverpool",
+          "Manchester"
+        ],
+        "Escócia": [
+          {
+            "nome": "Edimburgo",
+            "busca": "Edinburgh"
+          }
+        ]
+      }
+    }
+  }
+}
